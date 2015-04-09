@@ -1,23 +1,23 @@
 <div class="portfolio">
-<div class="container">
-
-    <div ng-repeat="entry in portfolio">
-        <div class="col-sm-6">
-            <div class="portfolio-entry">
+    <div class="portfolio-entry" ng-repeat="entry in portfolio">
+        <div class="col-sm-4">
+            <div class="portfolio-image-wrapper">
                 <div class="portfolio-entry-image" back-img="{{entry.thumbnail}}"></div>
-                
-                <div class="portfolio-entry-overlay">
-                    <!-- <a href="{{entry.link}}" target="_blank" class="portfolio-entry-link"> -->
-                        <div class="portfolio-entry-button">
-                            <div>
-                                <span class="glyphicon glyphicon-search"></span>
-                            </div>
+
+                <a ng-href="{{entry.link}}" target="_blank" class="portfolio-entry-overlay">
+                    <div class="portfolio-entry-button">
+                        <div>
+                            <span class="glyphicon glyphicon-search"></span>
                         </div>
-                    <!-- </a> -->
-                </div>
+                    </div>
+                </a>
             </div>
         </div>
+        <div class="portfolio-info col-sm-8">
+            <h4>{{entry.title}}</h4>
+            <a ng-href="{{entry.link}}">{{entry.link}}</a>
+            <hr>
+            <p>{{entry.desc}}</p>
+        </div>
     </div>
-    {{showOverlay}}
-</div>
 </div>

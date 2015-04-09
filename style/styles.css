@@ -56,32 +56,38 @@ h6 {
 }
 
 .portfolio {
-    padding: 20px;
+    padding: 50px 20px;
 }
 .portfolio-entry {
+    width: 100%;
+    padding:1em;
+}
+.portfolio-entry > * {
+    float:left;
+}
+.portfolio-image-wrapper {
     position: relative;
     height: 200px;
     width: 200px;
     border: 1px solid #D6D6D6;
     border-radius: 50%;
-    margin: 2em auto;
+    margin: 0 auto;
     border: 1px solid black;
 }
-@media (min-width: 768px) {
-    .portfolio-entry {
+@media (min-width: 992px) {
+    .portfolio-image-wrapper {
         height: 300px;
         width: 300px;
     }
 }
+.portfolio-info {
+    padding-left: 20px;
 
-.navbar-toggle {
-    border-radius: 0;
 }
-
 .portfolio-entry-image {
     height: 100%;
     width: 100%;
-    border-radius: inherit;
+    border-radius: 50%;
 }
 
 .portfolio-entry-overlay {
@@ -132,7 +138,9 @@ h6 {
 .social-buttons {
     margin-top: 0;
 }
-
+.navbar-toggle {
+    border-radius: 0;
+}
 .network-name {
     text-transform: uppercase;
     font-size: 14px;

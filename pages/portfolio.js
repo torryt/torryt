@@ -12,10 +12,11 @@ angular.module('app.portfolio', ['ngRoute', 'ui.bootstrap'])
 .controller('PortfolioCtrl', ['$scope', '$modal', function($scope, $modal) {
     $scope.portfolio = [
     {
-        name:       "Udir-viz",
+        title:      "Tillskuddsoversikt, Utdanningsdirektoratet",
+        desc:       "Som sommeransatt i Bekk Consulting har jeg vært med på utvikle en offentlig tilskuddsoversikt for Utdanningsdirektoratet.", 
         thumbnail:  "img/udir-viz250x250.png",
         image:      "img/udir-viz.png",
-        link:       "http://viz.udir.no/" 
+        link:       "http://viz.udir.no/"
     }
     ];
 }]);
