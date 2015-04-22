@@ -1,20 +1,43 @@
-/**
- * Plugins
- * -------
- */
-
-var gulp = require('gulp'); // Gulp is always required
-var scss = require('gulp-sass'); // Gulp libsass implementation
-
 /*
 *   Configurable paths
 */
 var styles = 'style'
 
+// Gulp Dependencies
+var gulp = require('gulp'); // Gulp is always required
+var rename = require('gulp-rename');
+
+// Build Dependencies
+var browserify = require('gulp-browserify');
+var uglify = require('gulp-uglify');
+
+// Style Dependencies
+var less = require('gulp-sass');
+var prefix = require('gulp-autoprefixer');
+var minifyCSS = require('gulp-minify-css');
+
+// Development Dependencies
+var jshint = require('gulp-jshint');
+
+
+
+
 /**
  * Tasks
  * -----
  */
+gulp.task('lint-client', function() {
+  return gulp.src('./client/**/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'));
+});
+
+gulp.task('lint-test', function() {
+  return gulp.src('./test/**/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'));
+});
+
 
 /**
  * Compiles SCSS files into CSS
