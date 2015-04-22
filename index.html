@@ -14,13 +14,13 @@
     <title>TUMBILI</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="style/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="style/styles.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -37,25 +37,25 @@
         <div class="container topnav">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle" ng-click="navbarCollapsed = !navbarCollapsed">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="#/">Tumbili</a>
+                <a class="navbar-brand topnav" href="#">Tumbili</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" collapse="navbarCollapsed">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#/">Forsiden</a>
+                        <a href="#/" ng-click="navbarCollapsed = !navbarCollapsed">Forsiden</a>
                     </li>
                     <li>
-                        <a href="#/om">Hvem er vi?</a>
+                        <a href="#/om" ng-click="navbarCollapsed = !navbarCollapsed">Hvem er vi?</a>
                     </li>
                     <li>
-                        <a href="#/portfolio">Hva har vi gjort?</a>
+                        <a href="#/portfolio" ng-click="navbarCollapsed = !navbarCollapsed">Hva har vi gjort?</a>
                     </li>
                 </ul>
             </div>
@@ -63,25 +63,19 @@
         </div>
         <!-- /.container -->
     </nav>
+    <!-- Header -->
 
     <div ng-view class="partial-view">
         
     </div>
-    <!-- Header -->
-    
 
-    <!-- Footer -->
-    <footer>
-        <span class="email">torry.tufteland@gmail.com</span>
-        <span class="glyphicon glyphicon-envelope contact-info"></span>
-    </footer>
-
-    <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="js/ui-bootstrap.min.js"></script>
+    <script src="bower_components/ui-bootstrap/dist/ui-bootstrap-tpls-0.12.1.min.js"></script>
+
+    <!-- <script src="js/ui-bootstrap.min.js"></script> -->
 
     <script src="app.js"></script>
     <script src="pages/intro.js"></script>
@@ -89,7 +83,7 @@
     <script src="pages/portfolio.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
 
 </body>
 

@@ -1,0 +1,8 @@
+{
+  "name": "Tumbili",
+  "description": "Homepage for Tumbili - Software Consultancy",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-sass": "^1.3.3"
+  }
+}

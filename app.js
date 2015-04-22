@@ -14,7 +14,7 @@ app.config(['$routeProvider', function($routeProvider) {
 }]);
 
 app.controller('AppController', ['$scope', function($scope) {
-
+  $scope.navbarCollapsed = true;
 }]);
 
 app.directive('backImg', function(){
@@ -26,26 +26,3 @@ app.directive('backImg', function(){
         });
     };
 });
-
-
-function showEmail(){
-    $( ".email" ).css("font-size", "2em");
-    $( ".contact-info" ).addClass("contact-info-hovered");
-}
-
-$( "footer" ).hover(
-  function() {
-        showEmail();
-  }, function() {
-    if($(document).width()>768) {
-        $( ".email" ).css("font-size", "0");
-        $( ".contact-info" ).removeClass("contact-info-hovered");
-    }
-  }
-);
-$("footer").focusin(function(){showEmail();});
-
-$( ".contact-info" ).click(function() {
-    showEmail();
-});
-

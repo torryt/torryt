@@ -1,0 +1,322 @@
+/*!
+ * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: rgb(252, 252, 252);
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 250;
+}
+
+.topnav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.partial-view > div {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+@media (min-width: 768px) {
+    .partial-view, .partial-view > div {
+        height: 100%;
+    }
+}
+
+.intro-section {
+    background-color: #2F2F3F;
+    color: #f8f8f8;
+    text-align: center;
+}
+
+.about-section {
+    text-align: center;
+    line-height: 2;
+}
+
+.portfolio {
+    padding: 50px 20px;
+}
+.portfolio-entry {
+    width: 100%;
+    padding:1em;
+}
+.portfolio-entry > * {
+    float:left;
+}
+.portfolio-image-wrapper {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border: 1px solid #D6D6D6;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+@media (min-width: 992px) {
+    .portfolio-image-wrapper {
+        height: 300px;
+        width: 300px;
+    }
+}
+.portfolio-info {
+    padding-left: 20px;
+
+}
+.portfolio-entry-image {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.portfolio-entry-overlay {
+    -moz-transition: opacity .2s ease-in;
+    -o-transition: opacity .2s ease-in;
+    -webkit-transition: opacity .2s ease-in;
+    transition: opacity .2s ease-in;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: inherit;
+    display: table;
+    text-align: center;
+}
+.portfolio-entry-overlay:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.portfolio-entry-link {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+}
+.portfolio-entry-button {
+    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+}
+.portfolio-entry-button > div {
+    margin: 0 auto;
+    font-size: 2em;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.portfolio-entry-button > div > * {
+    vertical-align: middle;
+}
+.social-buttons {
+    margin-top: 0;
+}
+.navbar-toggle {
+    border-radius: 0;
+}
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+}
+
+.feature-list{
+    display: inline-block;
+}
+.feature-list-item {
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    padding: 2.3em 0;
+    top:-50px;
+    opacity: 0;
+}
+.fadein{
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+}
+
+.feature-list-item > p {
+    font-weight: 100;
+    padding: 0 1em;
+}
+
+.feature-circle {
+    margin: 0 auto;
+    width: 120px;
+    height:120px;
+    border-radius:50%;
+    background-color: #2F2F3F;
+    border:2px solid white;
+    display: table;
+}
+.feature-icon {
+    vertical-align: middle;
+    display: table-cell;
+    font-size: 4em;
+}
+
+.profile-picture {
+    margin: 10px auto;
+    height: 200px;
+    width: 200px;
+    background-image: url('../img/profile.jpg');
+    background-size: 200px;
+    border-radius:50%;
+    border: 2px solid black;
+}
+.profile-title {
+    color: #6B6B6B;
+    text-transform: uppercase;
+}
+
+.bio {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+
+
+.intro-message > h1 {
+    margin: 0;
+    font-size: 5em;
+}
+.intro-message > h4 {
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+.email-title {
+    color: #595959;
+    margin-right: 10px;
+}
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        float: left;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    .banner h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        font-size: 3em;
+    }
+
+    ul.banner-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+footer {
+    color: white;
+    position: relative;
+    height: 50px;
+    top: -70px;
+    text-align: center;
+    width: 100%;
+}
+
+.contact-info {
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+    font-size: 3em;
+}
+
+.contact-info-hovered {
+    font-size: 0em;
+}
+.email {
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+    text-decoration: underline;
+    font-weight: 100;
+    font-size: 0;
+}
+
+.bordered {
+    border: 1px solid black;
+}
